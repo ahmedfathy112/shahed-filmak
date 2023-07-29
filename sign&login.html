@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp & LogIn</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h3 id="form-title">Log-In Now</h3>
+      </div>
+      <div class="form">
+        <div class="log-in" id="log-form">
+          <label class="user-label">Email</label>
+          <input type="email" class="user-name" />
+          <label class="user-label">password</label>
+          <input type="password" class="password" />
+          <button>Log Now</button>
+          <div class="register">
+            <p>Iam new...<span id="log-in">Register Now</span></p>
+            <p>LogIn as...<span id="admin-btn">Admin</span></p>
+          </div>
+        </div>
+        <div class="sign-up" id="sign-form">
+          <label class="user-label">User-Name</label>
+          <input type="text" />
+          <label class="user-label">Email</label>
+          <input type="email" class="email" />
+          <label class="user-label" id="pass">Password</label>
+          <input type="password" class="password" />
+          <label class="user-label">Confirm Password</label>
+          <input type="password" id="confirm-pass" />
+          <button id="btn-send">Sign Now</button>
+          <div class="register">
+            <p>Iam user...<span id="sign-up">Log-in Now</span></p>
+            <p>LogIn as...<span id="admin-btn">Admin</span></p>
+          </div>
+        </div>
+        <div class="admin-form" id="admin-form">
+          <label class="user-label">Email</label>
+          <input type="email" class="user-name" />
+          <label class="user-label">password</label>
+          <input type="password" class="password" />
+          <button>Enter Now</button>
+          <p>Iam new...<span id="log-in">Register Now</span></p>
+          <p>Iam user...<span id="sign-up">Log-in Now</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
