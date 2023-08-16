@@ -98,4 +98,32 @@ button {
   display: none;
   transition: 1s;
 }
+
+.error-message {
+  color: #d00101;
+  font-size: 14px;
+  display: none;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container .fa-exclamation {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #d00101;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.input-container.error .fa-exclamation {
+  opacity: 1;
+}
+
+.input-container.error input {
+  border: 3px solid #d00101;
+}
 /* end logIn and signUp page */
