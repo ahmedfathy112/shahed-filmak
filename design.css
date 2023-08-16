@@ -127,3 +127,219 @@ button {
   border: 3px solid #d00101;
 }
 /* end logIn and signUp page */
+/* start profile page */
+.head {
+  width: 100%;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  z-index: 999;
+}
+.head .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+.navbar .logo {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+.navbar .logo::first-letter {
+  color: orange;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.navbar .nav-links a:hover {
+  color: orange;
+}
+.navbar .nav-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: 1s;
+  width: 0;
+  height: 4px;
+  background-color: orange;
+}
+.navbar .nav-links a:hover::before {
+  width: 100%;
+}
+.navbar .nav-links a.active {
+  color: orange;
+}
+/* .sections {
+  position: relative;
+  width: 200px;
+}
+.sections .nav-sections {
+  position: absolute;
+  box-shadow: -2px -1px 1px 1px;
+  display: block;
+  margin-top: 40px;
+  padding: 12px;
+  list-style: none;
+}
+.sections .nav-sections li {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+} */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.container .page-title {
+  font-size: 25px;
+  color: #fff;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  transition: 0.7s ease-in-out;
+  border: 3px solid orange;
+}
+.container .page-title:hover {
+  color: orange;
+  background-color: transparent;
+}
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+}
+.profile-info .text {
+  margin-top: 70px;
+}
+.profile-info .text h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.profile-info .text h3 span {
+  color: orange;
+}
+.profile-info .text p {
+  font-size: 21px;
+}
+.profile-info img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+table td {
+  color: #fff;
+  border: 2px solid orange;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 12px;
+}
+table tr {
+  margin: 12px;
+}
+
+.favorit-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.favorit-list .fav-title {
+  font-size: 25px;
+  color: #fff;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+  border: 3px solid orange;
+  text-align: center;
+  width: 200px;
+  margin-left: 43%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.favorit-list .fav-title:hover {
+  color: orange;
+  background-color: transparent;
+}
+.autoplay {
+  width: 95%;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.autoplay .favorite-card {
+  width: 350px;
+  margin: 20px;
+  height: auto;
+  border-radius: 12px;
+}
+.autoplay .favorite-card img {
+  width: 350px;
+  border-radius: 12px;
+}
+.slick-next {
+  right: -14px;
+}
+.slick-prev {
+  left: -21px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 26px;
+  z-index: 9;
+}
+
+@media screen and (max-width: 676px) {
+  .head .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head .navbar {
+    text-align: center;
+  }
+  .navbar .nav-links {
+    margin-top: 13px;
+  }
+  .container .page-title {
+    margin-top: 40px;
+  }
+  .profile-info {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .profile-info .text {
+    margin-left: 40px;
+  }
+  table {
+    margin-left: 40px;
+  }
+  .favorit-list .fav-title {
+    margin-left: 29%;
+  }
+  .autoplay {
+    width: 95%;
+    margin-left: 16px;
+  }
+  .autoplay .favorite-card img {
+    width: 190px;
+  }
+}
+/* end profile page */

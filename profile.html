@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar">
+        <div class="logo">Shahed</div>
+        <ul class="nav-links">
+          <a href="#">Home</a>
+          <a href="#" class="sections">Sections </a>
+          <a href="#">About Us</a>
+          <a href="#" class="active">Profile</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="container">
+      <h3 class="page-title">Profile Page</h3>
+      <div class="profile-info">
+        <div class="text">
+          <h3>Welcome <span>Ahmed,</span></h3>
+          <p>here you can find your favorite list</p>
+        </div>
+        <img src="profile page/Elemental.jpg" alt="" />
+      </div>
+
+      <table>
+        <tr>
+          <td>name</td>
+          <td>Ahmed Fathy</td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>ahmedfathy241110@gmail.com</td>
+        </tr>
+        <tr>
+          <td>mark</td>
+          <td>mohamed</td>
+        </tr>
+      </table>
+    </section>
+    <section class="favorit-list">
+      <h3 class="fav-title">Your Favorite</h3>
+      <div class="autoplay">
+        <div class="favorite-card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="favorite-card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="favorite-card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="favorite-card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="favorite-card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      if (window.innerWidth <= 676) {
+        $(".autoplay").slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          dots: true,
+          width: 200,
+          margin: 15,
+        });
+      } else {
+        $(".autoplay").slick({
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          dots: true,
+        });
+      }
+    </script>
+  </body>
+</html>
