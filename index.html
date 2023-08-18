@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body class="home-page">
+    <div class="landing-page">
+      <nav class="land-nav">
+        <div class="land-logo">Aflamak</div>
+        <div class="land-nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="profile.html">Profile</a>
+        </div>
+        <div class="land-nav-search">
+          <input type="search" value="" placeholder="search" />
+        </div>
+      </nav>
+      <div class="land-contant">
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          corporis distinctio facere culpa, eos quae placeat beatae? Animi,
+          ducimus voluptates! Ullam eligendi quos ab laborum aliquam ut eius
+          iusto quam.
+        </div>
+        <div class="rate">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <h3>4.5 Rating</h3>
+        </div>
+        <div class="play-btns">
+          <button>PLAY</button>
+        </div>
+      </div>
+    </div>
+    <div class="department-bar">
+      <a href="#">Comedy</a>
+      <a href="#">Action</a>
+      <a href="#">Romantice</a>
+      <a href="#">Adventure</a>
+      <a href="#">sciense Fiction</a>
+    </div>
+    <div class="most-viewed">
+      <h3 class="most-view-title">Most Viewed</h3>
+      <div class="autoplay">
+        <div class="card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="profile page/Elemental.jpg" alt="" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="Rumble.jpg" alt="" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="Dora and the Lost City of Gold.jpg" alt="" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="elbeat beaty.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      if (window.innerWidth <= 676) {
+        $(".autoplay").slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          dots: true,
+          width: 200,
+          margin: 15,
+        });
+      } else {
+        $(".autoplay").slick({
+          slidesToShow: 4.5,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          dots: true,
+        });
+      }
+    </script>
+    <script src="all.min.js"></script>
+  </body>
+</html>
